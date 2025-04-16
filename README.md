@@ -10,6 +10,18 @@
 - SQLite3
 - Node.js and npm
 
+## Install composer & Add .env & Migrate & Install JWTAuth Secret
+
+```bash
+composer install
+cp .env.example .env
+touch database/database.sqlite
+php artisan key:generate
+php artisan jwt:secret
+
+valet link
+```
+
 
 # API Documentation:
 
